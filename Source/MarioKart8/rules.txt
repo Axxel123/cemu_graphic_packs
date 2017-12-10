@@ -99,3 +99,11 @@ height = 320
 formatsExcluded = 0x41A # exclude obvious textures
 overwriteWidth = <?=round($scaleFactorX*640)?> 
 overwriteHeight = <?=round($scaleFactorY*320)?> 
+
+# Shadows
+[TextureRedefine]
+width = 1024
+height = 1024
+formats = 0x5
+overwriteWidth = <?=round($scaleFactorY*2048)?> 
+overwriteHeight = <?=round($scaleFactorY*2048)?> 

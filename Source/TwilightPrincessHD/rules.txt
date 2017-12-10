@@ -13,14 +13,14 @@ name = "The Legend of Zelda: Twilight Princess HD - <?=$title?>"
 version = 2
 
 [TextureRedefine] # game rendering resolution
-width =	1920
+width = 1920
 height = 1080
 formatsExcluded = 0x41A # exclude the intro background texture
 overwriteWidth = <?=round($scaleFactorX*1920)?> 
 overwriteHeight = <?=round($scaleFactorY*1080)?> 
 
 [TextureRedefine] # Blur, bloom
-width =	960
+width = 960
 height = 540
 formatsExcluded = 0x8 # exclude the menu background textures
 overwriteWidth = <?=round($scaleFactorX*960)?> 
@@ -29,7 +29,7 @@ overwriteHeight = <?=round($scaleFactorY*540)?>
 [TextureRedefine] #colour grading
 width = 480
 height = 270
-formats = 0x01a
+formats = 0x1a
 #overwriteWidth = <?=round($scaleFactorX*480)?> 
 #overwriteHeight = <?=round($scaleFactorY*270)?> 
 
@@ -38,3 +38,9 @@ width = 854
 height = 480
 #overwriteWidth = <?=round($scaleFactorX*1920)?> 
 #overwriteHeight = <?=round($scaleFactorY*1080)?> 
+
+[TextureRedefine] # shadows
+width = 384
+height = 384
+overwriteWidth = <?=round($scaleFactorY*384)?> 
+overwriteHeight = <?=round($scaleFactorY*384)?> 

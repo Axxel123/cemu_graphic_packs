@@ -15,7 +15,7 @@ version = 2
 [TextureRedefine] # tv
 width = 1280
 height = 720
-formatsExcluded = 0x008,0x41A,0x034,0x035 # exclude obvious textures
+formatsExcluded = 0x8,0x41A,0x034,0x35 # exclude obvious textures
 overwriteWidth = <?=round($scaleFactorX*1280)?> 
 overwriteHeight = <?=round($scaleFactorY*720)?> 
 
@@ -106,3 +106,10 @@ height = 120
 formatsExcluded = 0x41A # exclude obvious textures
 overwriteWidth = <?=round($scaleFactorX*320)?> 
 overwriteHeight = <?=round($scaleFactorY*180)?> 
+
+[TextureRedefine] # shadows
+width = 1024
+height = 1024
+formats = 0x5
+overwriteWidth = <?=round($scaleFactorY*1024)?> 
+overwriteHeight = <?=round($scaleFactorY*1024)?> 

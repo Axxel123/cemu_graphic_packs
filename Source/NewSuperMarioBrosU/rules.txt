@@ -17,28 +17,27 @@ height = 720
 overwriteWidth = <?=round($scaleFactorX*1280)?> 
 overwriteHeight = <?=round($scaleFactorY*720)?> 
 
-[TextureRedefine] # AA pass, shadows viewport		
-width =	640	
-height = 360	
+[TextureRedefine] # AA pass, shadows viewport  
+width = 640
+height = 360
 overwriteWidth = <?=round($scaleFactorX*640)?> 
 overwriteHeight = <?=round($scaleFactorY*360)?> 
-		
-[TextureRedefine] # 		
-width =	320	
-height = 180	
+
+[TextureRedefine]
+width = 320
+height = 180
 overwriteWidth = <?=round($scaleFactorX*320)?> 
 overwriteHeight = <?=round($scaleFactorY*180)?> 
-		
-##Textures		
-[TextureRedefine] # Dynamic shadows texture 3d overworld		
-width = 1024	
-height = 1024	
-formats = 0x005 #0x034 static shadow texture, don't scale
-overwriteWidth = <?=round($scaleFactorY*1024)?> 
-overwriteHeight = <?=round($scaleFactorY*1024)?> 
 
 [TextureRedefine] # gamepad
 width = 854
 height = 480
 #overwriteWidth = <?=round($scaleFactorX*1280)?> 
 #overwriteHeight = <?=round($scaleFactorY*720)?> 
+
+[TextureRedefine] # shadows
+width = 1024
+height = 1024
+formats = 0x5
+overwriteWidth = <?=round($scaleFactorY*1024)?> 
+overwriteHeight = <?=round($scaleFactorY*1024)?> 
